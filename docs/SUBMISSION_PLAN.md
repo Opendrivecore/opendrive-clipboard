@@ -81,7 +81,7 @@ The product story for judges: "We use Gemini agents to delete paperwork, not to 
                          │
                          ▼
 ┌──────────────────────────────────────────────────────────┐
-│  Gemini ADK Agent  (Python, Cloud Run, Gemini 1.5 Pro)   │
+│  Gemini ADK Agent  (Python, Cloud Run, Gemini 2.5 Pro)   │
 │  Loop: plan → MCP tool call → reflect → ... → stop       │
 └──────────────────────────────────────────────────────────┘
                          │
@@ -113,7 +113,7 @@ All three MCP servers ship in the same Cloud Run deployment for the demo. The ag
 
 | Layer | Choice | Why |
 |---|---|---|
-| Intelligence | Gemini 1.5 Pro for reasoning · Gemini Flash for cheap classification | Mandatory tech; mixing tiers improves Tech score |
+| Intelligence | Gemini 2.5 Pro for reasoning · Gemini 2.5 Flash for cheap classification | Mandatory tech; mixing tiers improves Tech score. Verified `gemini-2.5-flash` round-trips in `us-central1` on the project (2026-05-01); the 1.5 generation is retired. |
 | Orchestration | Google **ADK** (Python) | Mandatory tech; ADK is the headline framework Google wants showcased |
 | Tool layer | Three MCP servers (Python, FastMCP or official Google MCP) | Hits the explicit Track 1 MCP mandate |
 | Demo backend | Laravel 12 + Inertia v2 | Reuses house style; fast to build the review gate |

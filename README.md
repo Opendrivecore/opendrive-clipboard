@@ -73,7 +73,7 @@ See `docs/SUBMISSION_PLAN.md` for the full plan, `docs/ENGINEERING_PLAN.md` for 
                          │
                          ▼
 ┌──────────────────────────────────────────────────────────┐
-│  Gemini ADK Agent  (Python, Cloud Run, Gemini 1.5 Pro)   │
+│  Gemini ADK Agent  (Python, Cloud Run, Gemini 2.5 Pro)   │
 │  Loop: plan → MCP tool call → reflect → ... → stop       │
 └──────────────────────────────────────────────────────────┘
                          │
