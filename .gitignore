@@ -1,0 +1,70 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp.*
+
+# Laravel
+/dashboard/vendor/
+/dashboard/node_modules/
+/dashboard/public/build/
+/dashboard/public/hot/
+/dashboard/public/storage
+/dashboard/storage/*.key
+/dashboard/storage/framework/cache/data/
+/dashboard/storage/framework/sessions/
+/dashboard/storage/framework/views/
+/dashboard/storage/logs/
+/dashboard/.phpunit.result.cache
+/dashboard/Homestead.json
+/dashboard/Homestead.yaml
+/dashboard/auth.json
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+service-account*.json
+gcp-credentials*.json
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Cloud / build
+.gcloud/
+.terraform/
+*.tfstate
+*.tfstate.backup
+
+# Local scratch
+scratch/
+tmp/
+*.log
